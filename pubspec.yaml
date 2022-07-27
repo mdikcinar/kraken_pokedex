@@ -1,0 +1,74 @@
+name: kraken_pokedex
+description: A new Flutter project.
+
+# Prevent accidental publishing to pub.dev.
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.3 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  #Core
+  flutter_bloc: ^8.0.1
+  bloc_concurrency: ^0.2.0
+  equatable: ^2.0.3
+  authentication:
+    path: packages/authentication
+  flow_builder: ^0.0.9
+  easy_localization: ^3.0.1
+
+  #Network
+  chopper: ^4.0.6
+
+  #Ui
+  flutter_svg: ^1.1.1
+  fluttertoast: ^8.0.9
+  palette_generator: ^0.3.3+1
+  percent_indicator: ^4.2.2
+  shimmer: ^2.0.0
+
+
+  
+dev_dependencies:
+  #Linter
+  very_good_analysis: ^3.0.1
+  
+  #Testing
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  bloc_test: ^9.0.3
+  mocktail: ^0.3.0
+
+  #Code generators
+  build_runner: ^2.1.11
+  chopper_generator: ^4.0.5
+  json_annotation: ^4.5.0
+  json_serializable: ^6.2.0
+
+
+
+  
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/pokemon/
+    - assets/languages/
+    - assets/svg/
+
+  fonts:
+   - family: orbitron
+     fonts:
+      - asset: assets/fonts/Orbitron-ExtraBold.ttf
+
+
